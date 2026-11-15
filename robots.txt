@@ -1,0 +1,8 @@
+# robots.txt for Aashvi Jain Portfolio
+# URL: https://aashvijain2610-lang.github.io/portfolio/
+
+User-agent: *
+Allow: /
+
+# Sitemap definition
+Sitemap: https://aashvijain2610-lang.github.io/portfolio/sitemap.xml

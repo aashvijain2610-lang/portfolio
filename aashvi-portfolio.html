@@ -2,11 +2,100 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Aashvi Jain – Finance Student, AI Learner, and Social Media Enthusiast. Personal portfolio showcasing education, skills, projects, and certifications." />
-  <meta name="keywords" content="Aashvi Jain, Finance Student, BMS, AI Learner, Social Media, Portfolio" />
-  <title>Aashvi Jain | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  
+  <!-- SEO Title & Meta Descriptions -->
+  <title>Aashvi Jain | Finance Student, AI Learner & Management Portfolio</title>
+  <meta name="description" content="Explore the official portfolio of Aashvi Jain – BMS Finance student at K.P.B. Hinduja College, AI & LLM enthusiast, and creative leader in social media management and financial analysis." />
+  <meta name="keywords" content="Aashvi Jain, Aashvi Deepak Jain, Finance Student, BMS Finance, AI Learner, Large Language Models, Social Media Management, Content Creation, K.P.B. Hinduja College, Mumbai, Financial Analysis, Student Portfolio" />
+  <meta name="author" content="Aashvi Deepak Jain" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://aashvijain2610-lang.github.io/portfolio/" />
+  
+  <!-- AI & Crawler Discovery -->
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="https://aashvijain2610-lang.github.io/portfolio/sitemap.xml" />
+  <link rel="help" type="text/plain" title="LLMs Context" href="https://aashvijain2610-lang.github.io/portfolio/llms.txt" />
 
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://aashvijain2610-lang.github.io/portfolio/" />
+  <meta property="og:site_name" content="Aashvi Jain Portfolio" />
+  <meta property="og:title" content="Aashvi Jain | Finance Student, AI Learner & Management Portfolio" />
+  <meta property="og:description" content="Personal portfolio of Aashvi Jain showcasing academic journey in BMS Finance, AI & LLM skills, business research projects, and leadership achievements." />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter / X Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://aashvijain2610-lang.github.io/portfolio/" />
+  <meta name="twitter:title" content="Aashvi Jain | Finance Student & AI Learner Portfolio" />
+  <meta name="twitter:description" content="Explore the portfolio of Aashvi Jain: BMS Finance student, AI exploration, business projects, and certifications." />
+
+  <!-- Schema.org JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://aashvijain2610-lang.github.io/portfolio/#website",
+        "url": "https://aashvijain2610-lang.github.io/portfolio/",
+        "name": "Aashvi Jain Portfolio",
+        "description": "Personal portfolio of Aashvi Jain showcasing finance education, AI projects, and management achievements.",
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "ProfilePage",
+        "@id": "https://aashvijain2610-lang.github.io/portfolio/#webpage",
+        "url": "https://aashvijain2610-lang.github.io/portfolio/",
+        "name": "Aashvi Jain | Finance Student, AI Learner & Management Portfolio",
+        "isPartOf": {
+          "@id": "https://aashvijain2610-lang.github.io/portfolio/#website"
+        },
+        "about": {
+          "@id": "https://aashvijain2610-lang.github.io/portfolio/#person"
+        },
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://aashvijain2610-lang.github.io/portfolio/#person",
+        "name": "Aashvi Jain",
+        "alternateName": "Aashvi Deepak Jain",
+        "url": "https://aashvijain2610-lang.github.io/portfolio/",
+        "jobTitle": "Finance Student & AI Learner",
+        "description": "BMS Finance undergraduate at K. P. B. Hinduja College of Commerce, passionate about financial analysis, Artificial Intelligence, LLMs, and social media management.",
+        "alumniOf": [
+          {
+            "@type": "EducationalOrganization",
+            "name": "K. P. B. Hinduja College of Commerce",
+            "url": "https://hindujacollege.com"
+          },
+          {
+            "@type": "EducationalOrganization",
+            "name": "K.E.S. Shroff College of Arts and Commerce"
+          }
+        ],
+        "knowsAbout": [
+          "Finance",
+          "Management Studies",
+          "Artificial Intelligence",
+          "Large Language Models (LLMs)",
+          "Social Media Management",
+          "Content Creation",
+          "Financial Analysis",
+          "Microsoft Office Suite"
+        ],
+        "sameAs": [
+          "https://github.com/aashvijain2610-lang"
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Google Fonts & Font Awesome -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -17,6 +106,7 @@
    style.css — Aashvi Jain Portfolio
    Design: cream/parchment paper texture, editorial type pairing,
    warm terracotta accents, refined timeline & cards.
+   Mobile-friendly & touch-optimized.
    ============================================================ */
 
 /* ---------- CSS Custom Properties ---------- */
@@ -35,7 +125,7 @@
 
   /* Typography */
   --font-display: 'Playfair Display', Georgia, serif;
-  --font-body:    'Poppins', system-ui, sans-serif;
+  --font-body:    'Poppins', system-ui, -apple-system, sans-serif;
 
   /* Spacing */
   --section-py:   6rem;
@@ -59,20 +149,21 @@ body {
   background-color: var(--cream);
   color: var(--ink);
   line-height: 1.7;
-  /* Subtle paper grain via SVG data URI */
+  overflow-x: hidden;
   background-image:
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
 }
 
-img { max-width: 100%; display: block; }
+img { max-width: 100%; height: auto; display: block; }
 a { text-decoration: none; color: inherit; }
 ul { list-style: none; }
 
-/* ---------- Typography ---------- */
-h1, h2, h3 { font-family: var(--font-display); line-height: 1.2; }
-h1 { font-size: clamp(2.4rem, 6vw, 4.4rem); }
-h2 { font-size: clamp(1.8rem, 4vw, 2.8rem); }
-h3 { font-size: 1.15rem; font-weight: 600; }
+/* ---------- Typography & Headings ---------- */
+h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.25; }
+h1 { font-size: clamp(2.3rem, 5.5vw, 4.2rem); }
+h2 { font-size: clamp(1.75rem, 3.8vw, 2.6rem); }
+h3 { font-size: 1.2rem; font-weight: 600; }
+h4 { font-size: 1rem; font-weight: 600; }
 p  { font-size: 0.95rem; color: var(--ink-light); }
 strong { color: var(--ink); }
 
@@ -102,29 +193,36 @@ strong { color: var(--ink); }
   user-select: none;
   pointer-events: none;
   letter-spacing: -0.04em;
+  opacity: 0.8;
 }
 
 .section-title {
-  font-size: clamp(1.6rem, 3.5vw, 2.4rem);
   color: var(--ink);
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
   position: relative;
   padding-bottom: 0.75rem;
 }
 .section-title::after {
   content: '';
   display: block;
-  width: 3rem;
+  width: 3.5rem;
   height: 3px;
   background: var(--accent);
   border-radius: 2px;
-  margin-top: 0.5rem;
+  margin-top: 0.6rem;
 }
 .section-title.center { text-align: center; }
-.section-title.center::after { margin: 0.5rem auto 0; }
+.section-title.center::after { margin: 0.6rem auto 0; }
+
+.section-intro {
+  max-width: 680px;
+  margin: -1.5rem auto 3rem;
+  text-align: center;
+  font-size: 1rem;
+}
 
 /* ============================================================
-   NAVBAR
+   NAVBAR & ACCESSIBILITY
    ============================================================ */
 .navbar {
   position: fixed;
@@ -134,7 +232,7 @@ strong { color: var(--ink); }
   transition: background var(--transition), box-shadow var(--transition);
 }
 .navbar.scrolled {
-  background: rgba(248, 244, 238, 0.92);
+  background: rgba(248, 244, 238, 0.94);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   box-shadow: var(--shadow-sm);
@@ -155,11 +253,15 @@ strong { color: var(--ink); }
   font-weight: 700;
   color: var(--accent);
   letter-spacing: 0.05em;
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .nav-links {
   display: flex;
-  gap: 2rem;
+  gap: 1.75rem;
   align-items: center;
 }
 .nav-link {
@@ -169,12 +271,16 @@ strong { color: var(--ink); }
   letter-spacing: 0.06em;
   text-transform: uppercase;
   position: relative;
+  padding: 0.5rem 0.25rem;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
   transition: color var(--transition);
 }
 .nav-link::after {
   content: '';
   position: absolute;
-  bottom: -3px; left: 0;
+  bottom: 4px; left: 0;
   width: 0; height: 2px;
   background: var(--accent);
   border-radius: 1px;
@@ -183,33 +289,38 @@ strong { color: var(--ink); }
 .nav-link:hover, .nav-link.active { color: var(--accent); }
 .nav-link:hover::after, .nav-link.active::after { width: 100%; }
 
-/* Hamburger */
+/* Mobile Hamburger */
 .nav-toggle {
   display: none;
   background: none;
   border: none;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: var(--ink);
   cursor: pointer;
-  padding: 0.25rem;
+  padding: 0.6rem;
+  min-height: 48px;
+  min-width: 48px;
+  border-radius: 8px;
+}
+.nav-toggle:focus-visible {
+  outline: 2px solid var(--accent);
 }
 
 /* ============================================================
    HERO SECTION
    ============================================================ */
 .hero {
-  min-height: 100vh;
+  min-height: 94vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 6rem 1.5rem 4rem;
+  padding: 7rem 1.5rem 4rem;
   position: relative;
   overflow: hidden;
 }
 
-/* Decorative circles */
 .hero::before, .hero::after {
   content: '';
   position: absolute;
@@ -217,47 +328,59 @@ strong { color: var(--ink); }
   pointer-events: none;
 }
 .hero::before {
-  width: 480px; height: 480px;
+  width: 500px; height: 500px;
   background: radial-gradient(circle, var(--accent-pale) 0%, transparent 70%);
   top: -100px; right: -120px;
   opacity: 0.6;
 }
 .hero::after {
-  width: 320px; height: 320px;
+  width: 340px; height: 340px;
   background: radial-gradient(circle, var(--cream-deep) 0%, transparent 70%);
   bottom: -60px; left: -80px;
 }
 
-.hero-content { position: relative; z-index: 1; }
+.hero-content { position: relative; z-index: 1; max-width: 820px; }
 
 .hero-greeting {
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   font-weight: 600;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--accent);
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
 }
 
-.hero-title { color: var(--ink); margin-bottom: 0.5rem; }
+.hero-title {
+  color: var(--ink);
+  margin-bottom: 1rem;
+}
 .hero-name {
   color: var(--accent);
   font-style: italic;
-  display: block;
+  display: inline-block;
 }
 
 .hero-subtitle {
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: 400;
   color: var(--ink-light);
-  margin: 1.25rem 0 2.5rem;
-  letter-spacing: 0.03em;
+  margin: 1.25rem auto 2.5rem;
+  max-width: 650px;
+  line-height: 1.8;
+}
+
+.hero-cta-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .hero-cta {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
+  justify-content: center;
+  gap: 0.6rem;
   background: var(--accent);
   color: var(--white);
   font-size: 0.85rem;
@@ -265,6 +388,7 @@ strong { color: var(--ink); }
   letter-spacing: 0.07em;
   text-transform: uppercase;
   padding: 0.85rem 2rem;
+  min-height: 48px;
   border-radius: 100px;
   transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
   box-shadow: 0 4px 18px rgba(181,104,42,0.3);
@@ -275,7 +399,29 @@ strong { color: var(--ink); }
   box-shadow: 0 8px 28px rgba(43,35,24,0.18);
 }
 
-/* Scroll line hint */
+.hero-cta-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  background: transparent;
+  color: var(--ink);
+  border: 1.5px solid var(--accent);
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  padding: 0.85rem 2rem;
+  min-height: 48px;
+  border-radius: 100px;
+  transition: all var(--transition);
+}
+.hero-cta-secondary:hover {
+  background: var(--accent-pale);
+  color: var(--accent);
+  transform: translateY(-2px);
+}
+
 .hero-scroll-hint {
   position: absolute;
   bottom: 2rem;
@@ -285,7 +431,7 @@ strong { color: var(--ink); }
 .hero-scroll-hint span {
   display: block;
   width: 2px;
-  height: 48px;
+  height: 44px;
   background: linear-gradient(to bottom, var(--accent), transparent);
   margin: 0 auto;
   animation: scrollHint 1.8s ease-in-out infinite;
@@ -297,72 +443,75 @@ strong { color: var(--ink); }
   100% { transform: scaleY(0); transform-origin: bottom; }
 }
 
-/* Fade-in animation */
-.fade-in { animation: fadeIn 1s ease both; }
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(24px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-
 /* ============================================================
    ABOUT SECTION
    ============================================================ */
 .about-card {
   background: var(--white);
   border-radius: var(--radius);
-  padding: 3rem 3.5rem;
-  box-shadow: var(--shadow-md);
+  padding: 3rem 2.5rem;
+  box-shadow: var(--shadow-sm);
   position: relative;
-  overflow: hidden;
-}
-.about-card::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0;
-  width: 6px; height: 100%;
-  background: linear-gradient(to bottom, var(--accent), var(--gold));
-  border-radius: var(--radius) 0 0 var(--radius);
 }
 
 .about-body {
   display: flex;
   gap: 2.5rem;
-  align-items: flex-start;
-  margin-top: 0.5rem;
+  align-items: center;
 }
 
-.about-avatar {
+.about-avatar-wrapper {
   flex-shrink: 0;
-  width: 88px; height: 88px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-avatar-img {
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   background: var(--accent-pale);
+  border: 3px solid var(--accent);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2.2rem;
   color: var(--accent);
-  border: 3px solid var(--cream-deep);
+  font-size: 3rem;
+  box-shadow: var(--shadow-sm);
 }
 
-.about-text p { margin-bottom: 1rem; }
+.about-text p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+.about-text p:last-of-type { margin-bottom: 1.5rem; }
+
+.about-text a.inline-link {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 500;
+  transition: color var(--transition);
+}
+.about-text a.inline-link:hover { color: var(--ink); }
 
 .about-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.6rem;
-  margin-top: 1.5rem;
 }
 .tag {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  background: var(--accent-pale);
-  color: var(--accent);
-  font-size: 0.78rem;
-  font-weight: 600;
-  padding: 0.35rem 0.85rem;
+  background: var(--cream-mid);
+  color: var(--ink);
+  font-size: 0.82rem;
+  font-weight: 500;
+  padding: 0.35rem 0.9rem;
   border-radius: 100px;
-  letter-spacing: 0.04em;
+  border: 1px solid var(--cream-deep);
 }
 
 /* ============================================================
@@ -370,89 +519,82 @@ strong { color: var(--ink); }
    ============================================================ */
 .education-grid {
   display: grid;
-  grid-template-columns: 200px 1fr;
+  grid-template-columns: 240px 1fr;
   gap: 3rem;
-  align-items: center;
+  align-items: start;
 }
 
 .education-icon {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 2.5rem 1.5rem;
   text-align: center;
-  color: var(--accent);
+  box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: 6rem;
 }
-.education-icon .fa-graduation-cap {
-  font-size: 5rem;
-  display: block;
-  margin-bottom: 0.75rem;
-  filter: drop-shadow(0 4px 12px rgba(181,104,42,0.25));
+.education-icon i {
+  font-size: 3.5rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
 }
 .edu-icon-label {
-  font-size: 0.78rem;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  color: var(--ink);
   font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--ink-light);
 }
 
 .education-entries {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  position: relative;
-  padding-left: 1.5rem;
-  border-left: 2px dashed var(--cream-deep);
+  gap: 1.5rem;
 }
 
 .edu-entry {
-  position: relative;
-  display: flex;
-  gap: 1.25rem;
-  align-items: flex-start;
-}
-.edu-dot {
-  position: absolute;
-  left: -1.95rem;
-  top: 0.35rem;
-  width: 16px; height: 16px;
-  border-radius: 50%;
-  background: var(--accent);
-  border: 3px solid var(--cream-mid);
-  flex-shrink: 0;
-}
-
-.edu-content {
   background: var(--white);
-  border-radius: calc(var(--radius) * 0.75);
-  padding: 1.25rem 1.5rem;
+  border-radius: var(--radius);
+  padding: 1.75rem 2rem;
   box-shadow: var(--shadow-sm);
+  border-left: 4px solid var(--accent);
   transition: transform var(--transition), box-shadow var(--transition);
-  width: 100%;
 }
-.edu-content:hover {
+.edu-entry:hover {
   transform: translateY(-3px);
   box-shadow: var(--shadow-md);
 }
 
 .edu-badge {
   display: inline-block;
-  font-size: 0.7rem;
+  font-size: 0.72rem;
   font-weight: 600;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  background: var(--accent-pale);
   color: var(--accent);
-  padding: 0.2rem 0.7rem;
+  background: var(--accent-pale);
+  padding: 0.2rem 0.75rem;
   border-radius: 100px;
   margin-bottom: 0.6rem;
 }
-.edu-content h3 { font-size: 1rem; margin-bottom: 0.4rem; }
+
+.edu-entry h3 {
+  color: var(--ink);
+  margin-bottom: 0.4rem;
+}
+
 .edu-institution {
-  font-size: 0.85rem;
+  font-size: 0.92rem;
   color: var(--ink-light);
   display: flex;
   align-items: center;
   gap: 0.4rem;
+  margin-bottom: 0.4rem;
 }
-.edu-note { font-size: 0.8rem; color: var(--accent-soft); margin-top: 0.3rem; }
+.edu-note {
+  font-size: 0.85rem;
+  color: var(--ink-light);
+  font-style: italic;
+}
 
 /* ============================================================
    SKILLS SECTION
@@ -460,20 +602,20 @@ strong { color: var(--ink); }
 .skills-grid {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
-  gap: 2rem;
-  align-items: start;
+  gap: 2.5rem;
+  align-items: center;
 }
 
 .skill-card {
   background: var(--white);
   border-radius: var(--radius);
-  padding: 2rem 2.25rem;
+  padding: 2.25rem 2rem;
   box-shadow: var(--shadow-sm);
   transition: transform var(--transition), box-shadow var(--transition);
 }
 .skill-card:hover {
-  transform: translateY(-6px);
-  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
 }
 
 .skill-card-header {
@@ -481,29 +623,24 @@ strong { color: var(--ink); }
   align-items: center;
   gap: 0.75rem;
   margin-bottom: 1.5rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid var(--cream-deep);
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--cream-mid);
 }
 .skill-icon {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: var(--accent);
-  width: 44px; height: 44px;
-  background: var(--accent-pale);
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
 }
-.skill-card-header h3 { font-size: 1.05rem; }
+.skill-card-header h3 {
+  color: var(--ink);
+}
 
 .skill-list li {
   display: flex;
   align-items: center;
-  gap: 0.65rem;
-  font-size: 0.88rem;
+  gap: 0.75rem;
+  font-size: 0.9rem;
   color: var(--ink-light);
-  padding: 0.55rem 0;
+  padding: 0.65rem 0;
   border-bottom: 1px solid var(--cream);
   transition: color var(--transition);
 }
@@ -512,16 +649,12 @@ strong { color: var(--ink); }
 .skill-list li i {
   width: 22px;
   color: var(--accent);
-  font-size: 0.8rem;
+  font-size: 0.85rem;
 }
 
 .skills-separator {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-size: 2.5rem;
   color: var(--gold);
-  padding-top: 1.5rem;
   filter: drop-shadow(0 3px 8px rgba(201,168,76,0.3));
   animation: glowPulse 2.5s ease-in-out infinite;
 }
@@ -531,7 +664,7 @@ strong { color: var(--ink); }
 }
 
 /* ============================================================
-   PROJECTS / TIMELINE
+   PROJECTS SECTION / TIMELINE
    ============================================================ */
 .timeline {
   position: relative;
@@ -588,25 +721,28 @@ strong { color: var(--ink); }
 
 .timeline-tag {
   display: inline-block;
-  font-size: 0.7rem;
+  font-size: 0.72rem;
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   background: var(--accent-pale);
   color: var(--accent);
-  padding: 0.2rem 0.75rem;
+  padding: 0.25rem 0.8rem;
   border-radius: 100px;
   margin-bottom: 0.6rem;
 }
-.timeline-card h3 { margin-bottom: 0.5rem; }
-.timeline-card p  { font-size: 0.88rem; }
+
+.timeline-card h3 {
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+}
 
 /* ============================================================
-   CERTIFICATIONS
+   CERTIFICATIONS SECTION
    ============================================================ */
 .certs-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
 }
 
@@ -616,102 +752,182 @@ strong { color: var(--ink); }
   padding: 2.25rem 2rem;
   box-shadow: var(--shadow-sm);
   position: relative;
-  overflow: hidden;
+  border-top: 4px solid var(--accent);
   transition: transform var(--transition), box-shadow var(--transition);
 }
-.cert-card::after {
-  content: '';
-  position: absolute;
-  bottom: 0; right: 0;
-  width: 90px; height: 90px;
-  border-radius: 50%;
-  background: var(--accent-pale);
-  transform: translate(35px, 35px);
-}
 .cert-card:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
 }
 
+.cert-status {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.75rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.75rem;
+  border-radius: 100px;
+}
+.cert-status.ongoing { background: #FEF3C7; color: #92400E; }
+.cert-status.achieved { background: #D1FAE5; color: #065F46; }
+
 .cert-icon {
-  width: 52px; height: 52px;
-  border-radius: 14px;
-  background: var(--accent-pale);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.4rem;
+  font-size: 2.2rem;
   color: var(--accent);
   margin-bottom: 1rem;
 }
-.cert-icon.achievement { background: #FFF8E7; color: var(--gold); }
+.cert-icon.achievement { color: var(--gold); }
 
-.cert-status {
-  display: inline-block;
-  font-size: 0.68rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  padding: 0.2rem 0.7rem;
-  border-radius: 100px;
-  margin-bottom: 0.75rem;
+.cert-card h3 {
+  color: var(--ink);
+  margin-bottom: 0.4rem;
 }
-.cert-status.ongoing  { background: #E8F5E9; color: #2E7D32; }
-.cert-status.achieved { background: #FFF8E7; color: #B8860B; }
-
-.cert-card h3 { font-size: 1.05rem; margin-bottom: 0.75rem; }
 .cert-sub {
-  font-size: 0.72rem;
+  font-size: 0.85rem;
   font-weight: 600;
-  letter-spacing: 0.1em;
+  color: var(--ink-light);
+  margin-bottom: 0.6rem;
   text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 0.5rem;
+  letter-spacing: 0.05em;
 }
 
-.cert-tags li {
+.cert-tags {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   gap: 0.5rem;
-  font-size: 0.85rem;
-  color: var(--ink-light);
-  padding: 0.35rem 0;
+  margin-bottom: 1rem;
+}
+.cert-tags li {
+  font-size: 0.8rem;
+  background: var(--cream-mid);
+  color: var(--ink);
+  padding: 0.3rem 0.75rem;
+  border-radius: 100px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
 }
 .cert-tags li i { color: var(--accent); font-size: 0.75rem; }
+
 .cert-note {
-  margin-top: 1rem;
-  font-size: 0.78rem;
-  color: var(--gold);
+  font-size: 0.85rem;
+  color: var(--ink-light);
   font-style: italic;
 }
 
 /* ============================================================
-   FOOTER
+   CONTACT / CONNECT SECTION
+   ============================================================ */
+.contact-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 3rem 2rem;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  max-width: 760px;
+  margin: 0 auto;
+}
+.contact-card p {
+  font-size: 1.05rem;
+  margin-bottom: 2rem;
+}
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: var(--cream-mid);
+  color: var(--ink);
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.75rem 1.6rem;
+  min-height: 48px;
+  border-radius: 100px;
+  border: 1px solid var(--cream-deep);
+  transition: all var(--transition);
+}
+.contact-btn:hover {
+  background: var(--accent);
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+/* ============================================================
+   FOOTER & SEO NAVIGATION
    ============================================================ */
 .footer {
   background: var(--ink);
-  color: rgba(248,244,238,0.6);
-  padding: 2rem 0;
-  font-size: 0.82rem;
+  color: var(--cream-mid);
+  padding: 3.5rem 0 2rem;
+  font-size: 0.9rem;
 }
-.footer-inner {
+.footer-container {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.footer-top {
+  display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  border-bottom: 1px solid rgba(239,232,220,0.15);
+  padding-bottom: 2rem;
 }
-.footer-links a {
-  color: var(--accent-soft);
-  font-size: 1rem;
+.footer-logo {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  color: var(--white);
+  font-weight: 700;
+}
+.footer-nav {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.footer-nav a {
+  color: var(--cream-mid);
+  font-size: 0.85rem;
   transition: color var(--transition);
+  padding: 0.4rem 0;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
 }
-.footer-links a:hover { color: var(--accent); }
+.footer-nav a:hover { color: var(--accent-soft); }
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.82rem;
+  color: var(--accent-pale);
+}
+.footer-bottom a {
+  color: var(--cream-mid);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.footer-bottom a:hover { color: var(--accent-soft); }
 
 /* ============================================================
-   REVEAL ANIMATION (scroll-triggered)
+   REVEAL ANIMATIONS
    ============================================================ */
 .reveal {
   opacity: 0;
-  transform: translateY(32px);
+  transform: translateY(28px);
   transition: opacity 0.65s ease, transform 0.65s ease;
 }
 .reveal.visible {
@@ -720,25 +936,23 @@ strong { color: var(--ink); }
 }
 
 /* ============================================================
-   RESPONSIVE
+   RESPONSIVE / MOBILE-FRIENDLY BREAKPOINTS
    ============================================================ */
 @media (max-width: 900px) {
-  .skills-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-  .skills-separator {
-    padding-top: 0;
-    font-size: 2rem;
-  }
-
   .education-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
   .education-icon { display: none; }
-
-  .certs-grid { grid-template-columns: 1fr; }
+  
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .skills-separator {
+    text-align: center;
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 680px) {
@@ -750,79 +964,116 @@ strong { color: var(--ink); }
     top: 100%; left: 0; right: 0;
     flex-direction: column;
     gap: 0;
-    background: rgba(248, 244, 238, 0.97);
-    backdrop-filter: blur(12px);
+    background: rgba(248, 244, 238, 0.98);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
     padding: 1rem 0 1.5rem;
     box-shadow: var(--shadow-md);
   }
   .nav-links.open { display: flex; }
-  .nav-link { padding: 0.75rem 1.5rem; letter-spacing: 0.04em; width: 100%; }
-  .nav-toggle { display: block; }
+  .nav-link { 
+    padding: 0.85rem 1.75rem; 
+    width: 100%; 
+    min-height: 48px;
+    border-bottom: 1px solid var(--cream-mid);
+  }
+  .nav-toggle { display: flex; align-items: center; justify-content: center; }
 
-  .about-card { padding: 2rem 1.5rem; }
-  .about-body { flex-direction: column; gap: 1.5rem; }
+  .hero { padding: 6.5rem 1.25rem 3.5rem; min-height: auto; }
+  .hero-cta-group { flex-direction: column; width: 100%; }
+  .hero-cta, .hero-cta-secondary { width: 100%; }
 
-  .section-label { font-size: 3.5rem; }
+  .about-card { padding: 2rem 1.25rem; }
+  .about-body { flex-direction: column; text-align: center; gap: 1.5rem; }
+  .about-tags { justify-content: center; }
 
-  .footer-inner { flex-direction: column; gap: 0.75rem; text-align: center; }
+  .timeline { padding-left: 2rem; }
+  .timeline-marker { width: 38px; height: 38px; left: -2rem; font-size: 0.85rem; }
+  .timeline-card { padding: 1.5rem 1.25rem; }
+
+  .section-label { font-size: 3.5rem; top: 1rem; }
+  .certs-grid { grid-template-columns: 1fr; }
+
+  .footer-top { flex-direction: column; align-items: flex-start; }
+  .footer-bottom { flex-direction: column; align-items: flex-start; }
 }
 
-/* ============================================================
-   PRINT / REDUCED MOTION
-   ============================================================ */
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
   </style>
 </head>
 <body>
 
   <!-- ===== NAVBAR ===== -->
-  <nav class="navbar" id="navbar" aria-label="Main navigation">
-    <div class="nav-container">
-      <a href="#home" class="nav-logo">AJ</a>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
-        <i class="fas fa-bars"></i>
-      </button>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#home" class="nav-link">Home</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#education" class="nav-link">Education</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#certifications" class="nav-link">Certifications</a></li>
-      </ul>
-    </div>
-  </nav>
+  <header>
+    <nav class="navbar" id="navbar" aria-label="Main navigation">
+      <div class="nav-container">
+        <a href="#home" class="nav-logo" aria-label="Aashvi Jain Home">
+          <span>Aashvi Jain</span>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-  <main>
+  <main id="main-content">
 
-    <!-- ===== HERO ===== -->
-    <section id="home" class="hero" aria-label="Hero introduction">
-      <div class="hero-content fade-in">
-        <p class="hero-greeting">Welcome to my portfolio</p>
-        <h1 class="hero-title">Hello, I am<br /><span class="hero-name">Aashvi Jain</span></h1>
-        <p class="hero-subtitle">Finance Student &nbsp;·&nbsp; AI Learner &nbsp;·&nbsp; Social Media Enthusiast</p>
-        <a href="#about" class="hero-cta">Discover More <i class="fas fa-arrow-down"></i></a>
+    <!-- ===== HERO SECTION ===== -->
+    <section id="home" class="hero" aria-label="Introduction">
+      <div class="hero-content">
+        <p class="hero-greeting">Welcome to my professional portfolio</p>
+        <h1 class="hero-title">
+          Hello, I am <br />
+          <span class="hero-name">Aashvi Jain</span>
+        </h1>
+        <p class="hero-subtitle">
+          Finance Student at K.P.B. Hinduja College &nbsp;·&nbsp; AI &amp; LLM Learner &nbsp;·&nbsp; Social Media &amp; Content Creator
+        </p>
+        <div class="hero-cta-group">
+          <a href="#projects" class="hero-cta">Explore Projects <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+          <a href="#about" class="hero-cta-secondary">About Me <i class="fas fa-user" aria-hidden="true"></i></a>
+        </div>
       </div>
       <div class="hero-scroll-hint" aria-hidden="true"><span></span></div>
     </section>
 
-    <!-- ===== ABOUT ===== -->
+    <!-- ===== ABOUT SECTION ===== -->
     <section id="about" class="section" aria-labelledby="about-heading">
       <div class="container">
         <div class="about-card">
-          <div class="section-label">01</div>
-          <h2 id="about-heading" class="section-title">About Me</h2>
+          <div class="section-label" aria-hidden="true">01</div>
+          <h2 id="about-heading" class="section-title">About Aashvi Jain</h2>
           <div class="about-body">
-            <div class="about-avatar" aria-hidden="true"><i class="fas fa-user"></i></div>
+            <div class="about-avatar-wrapper">
+              <div class="about-avatar-img" role="img" aria-label="Aashvi Jain profile silhouette avatar">
+                <i class="fas fa-user-graduate" aria-hidden="true"></i>
+              </div>
+            </div>
             <div class="about-text">
-              <p>Hi, I'm <strong>Aashvi Deepak Jain</strong>, a BMS (Finance) student passionate about finance, AI, and social media. I enjoy exploring AI tools, LLMs, and digital content creation to improve productivity and creativity.</p>
-              <p>I believe in continuous learning, leadership, and using technology to solve real-world problems.</p>
-              <div class="about-tags">
-                <span class="tag"><i class="fas fa-chart-line"></i> Finance</span>
-                <span class="tag"><i class="fas fa-robot"></i> AI &amp; LLMs</span>
-                <span class="tag"><i class="fas fa-hashtag"></i> Social Media</span>
+              <p>Hi, I am <strong>Aashvi Deepak Jain</strong>, a Bachelor of Management Studies (BMS – Finance) student driven by the intersection of financial markets, artificial intelligence, and digital communication.</p>
+              <p>I actively explore how Large Language Models (LLMs) and generative AI can optimize financial analysis, workflow productivity, and content strategy. You can browse my academic journey under <a href="#education" class="inline-link">Education</a> or inspect my recent work in <a href="#projects" class="inline-link">Projects</a>.</p>
+              <p>My goal is to combine rigorous analytical capabilities with leadership and continuous technological adaptation to create meaningful business solutions.</p>
+              <div class="about-tags" aria-label="Core areas of interest">
+                <span class="tag"><i class="fas fa-chart-line" aria-hidden="true"></i> Financial Analysis</span>
+                <span class="tag"><i class="fas fa-robot" aria-hidden="true"></i> AI &amp; LLMs</span>
+                <span class="tag"><i class="fas fa-hashtag" aria-hidden="true"></i> Social Media Strategy</span>
+                <span class="tag"><i class="fas fa-lightbulb" aria-hidden="true"></i> Business Problem Solving</span>
               </div>
             </div>
           </div>
@@ -830,137 +1081,176 @@ strong { color: var(--ink); }
       </div>
     </section>
 
-    <!-- ===== EDUCATION ===== -->
+    <!-- ===== EDUCATION SECTION ===== -->
     <section id="education" class="section section-alt" aria-labelledby="education-heading">
       <div class="container">
-        <div class="section-label">02</div>
-        <h2 id="education-heading" class="section-title">Education</h2>
+        <div class="section-label" aria-hidden="true">02</div>
+        <h2 id="education-heading" class="section-title">Education &amp; Academic Background</h2>
+        <p class="section-intro">Foundations in finance, commerce, and business management studies in Mumbai.</p>
+        
         <div class="education-grid">
           <div class="education-icon" aria-hidden="true">
             <i class="fas fa-graduation-cap"></i>
-            <p class="edu-icon-label">Academic Journey</p>
+            <p class="edu-icon-label">Academic Path</p>
           </div>
           <div class="education-entries">
-            <div class="edu-entry reveal">
-              <div class="edu-dot"></div>
-              <div class="edu-content">
-                <span class="edu-badge">Undergraduate · Current</span>
-                <h3>Bachelor of Management Studies (BMS) – Finance</h3>
-                <p class="edu-institution"><i class="fas fa-building-columns"></i> K. P. B. Hinduja College of Commerce</p>
-              </div>
-            </div>
-            <div class="edu-entry reveal">
-              <div class="edu-dot"></div>
-              <div class="edu-content">
-                <span class="edu-badge">Higher Secondary</span>
-                <h3>Junior College (HSC)</h3>
-                <p class="edu-institution"><i class="fas fa-building-columns"></i> K.E.S. Shroff College of Arts and Commerce</p>
-                <p class="edu-note">Completed Higher Secondary Education</p>
-              </div>
-            </div>
+            <article class="edu-entry reveal">
+              <span class="edu-badge">Undergraduate Degree · Current</span>
+              <h3>Bachelor of Management Studies (BMS) – Finance</h3>
+              <p class="edu-institution">
+                <i class="fas fa-building-columns" aria-hidden="true"></i> 
+                <strong>K. P. B. Hinduja College of Commerce</strong>, Mumbai
+              </p>
+              <p class="edu-note">Comprehensive study of financial management, corporate accounting, economics, and strategic business leadership.</p>
+            </article>
+
+            <article class="edu-entry reveal">
+              <span class="edu-badge">Higher Secondary Certificate (HSC)</span>
+              <h3>Junior College (Commerce Stream)</h3>
+              <p class="edu-institution">
+                <i class="fas fa-building-columns" aria-hidden="true"></i> 
+                <strong>K.E.S. Shroff College of Arts and Commerce</strong>, Mumbai
+              </p>
+              <p class="edu-note">Completed Higher Secondary Education focusing on commerce, accountancy, mathematics, and business organization.</p>
+            </article>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== SKILLS ===== -->
+    <!-- ===== SKILLS SECTION ===== -->
     <section id="skills" class="section" aria-labelledby="skills-heading">
       <div class="container">
-        <div class="section-label">03</div>
-        <h2 id="skills-heading" class="section-title center">Skills</h2>
+        <div class="section-label" aria-hidden="true">03</div>
+        <h2 id="skills-heading" class="section-title center">Core Skills: Finance, AI &amp; Leadership</h2>
+        <p class="section-intro">A balanced blend of analytical acumen, technical software proficiency, and interpersonal leadership.</p>
+        
         <div class="skills-grid">
           <div class="skill-card reveal">
             <div class="skill-card-header">
-              <i class="fas fa-laptop-code skill-icon"></i>
-              <h3>Technical Skills</h3>
+              <i class="fas fa-laptop-code skill-icon" aria-hidden="true"></i>
+              <h3>Technical &amp; AI Competencies</h3>
             </div>
             <ul class="skill-list">
-              <li><i class="fas fa-file-excel"></i> Microsoft Office (Excel, Word, PowerPoint)</li>
-              <li><i class="fas fa-palette"></i> Canva</li>
-              <li><i class="fas fa-brain"></i> AI Tools &amp; LLMs</li>
-              <li><i class="fas fa-pen-nib"></i> Content Creation</li>
-              <li><i class="fas fa-share-nodes"></i> Social Media Management</li>
+              <li><i class="fas fa-file-excel" aria-hidden="true"></i> Microsoft Office Suite (Excel, Word, PowerPoint)</li>
+              <li><i class="fas fa-brain" aria-hidden="true"></i> AI Tools, Prompting &amp; LLM Exploration</li>
+              <li><i class="fas fa-palette" aria-hidden="true"></i> Canva &amp; Visual Design</li>
+              <li><i class="fas fa-pen-nib" aria-hidden="true"></i> Digital Content Creation &amp; Copywriting</li>
+              <li><i class="fas fa-share-nodes" aria-hidden="true"></i> Social Media Management &amp; Analytics</li>
             </ul>
           </div>
+
           <div class="skills-separator" aria-hidden="true"><i class="fas fa-lightbulb"></i></div>
+
           <div class="skill-card reveal">
             <div class="skill-card-header">
-              <i class="fas fa-people-group skill-icon"></i>
-              <h3>Soft Skills</h3>
+              <i class="fas fa-people-group skill-icon" aria-hidden="true"></i>
+              <h3>Soft Skills &amp; Leadership</h3>
             </div>
             <ul class="skill-list">
-              <li><i class="fas fa-comments"></i> Communication</li>
-              <li><i class="fas fa-star"></i> Leadership</li>
-              <li><i class="fas fa-users"></i> Team Management</li>
-              <li><i class="fas fa-wand-magic-sparkles"></i> Creativity</li>
-              <li><i class="fas fa-clock"></i> Time Management</li>
+              <li><i class="fas fa-comments" aria-hidden="true"></i> Strategic Communication &amp; PR</li>
+              <li><i class="fas fa-star" aria-hidden="true"></i> Leadership &amp; Committee Governance</li>
+              <li><i class="fas fa-users" aria-hidden="true"></i> Team Collaboration &amp; Delegated Management</li>
+              <li><i class="fas fa-wand-magic-sparkles" aria-hidden="true"></i> Creative Problem Solving</li>
+              <li><i class="fas fa-clock" aria-hidden="true"></i> Deadline &amp; Time Management</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== PROJECTS ===== -->
+    <!-- ===== PROJECTS SECTION ===== -->
     <section id="projects" class="section section-alt" aria-labelledby="projects-heading">
       <div class="container">
-        <div class="section-label">04</div>
-        <h2 id="projects-heading" class="section-title">Projects</h2>
+        <div class="section-label" aria-hidden="true">04</div>
+        <h2 id="projects-heading" class="section-title">Projects &amp; Research Case Studies</h2>
+        <p class="section-intro">Practical investigations into international trade challenges, brand perception, and artificial intelligence integration.</p>
+        
         <div class="timeline">
           <article class="timeline-item reveal">
-            <div class="timeline-marker"><i class="fas fa-globe-europe"></i></div>
+            <div class="timeline-marker" aria-hidden="true"><i class="fas fa-globe-europe"></i></div>
             <div class="timeline-card">
               <span class="timeline-tag">Research Study</span>
               <h3>Business Challenges in Germany</h3>
-              <p>A research-based study analysing key challenges faced by businesses operating in Germany, covering regulatory, cultural, and economic dimensions.</p>
+              <p>An in-depth research study analysing the operational and strategic hurdles encountered by enterprises operating in Germany. Examined regulatory compliance, cross-cultural dynamics, labour market frameworks, and macro-economic conditions.</p>
             </div>
           </article>
+
           <article class="timeline-item reveal">
-            <div class="timeline-marker"><i class="fas fa-cookie-bite"></i></div>
+            <div class="timeline-marker" aria-hidden="true"><i class="fas fa-cookie-bite"></i></div>
             <div class="timeline-card">
-              <span class="timeline-tag">Case Study</span>
-              <h3>Controversies in Food Brands</h3>
-              <p>A case study on controversies faced by brands like Cadbury and their impact on brand trust and reputation — exploring crisis management and consumer perception.</p>
+              <span class="timeline-tag">Brand Case Study</span>
+              <h3>Controversies in Food Brands (Cadbury Analysis)</h3>
+              <p>A comprehensive marketing and corporate governance case study evaluating public controversies faced by FMCG giants such as Cadbury. Investigated PR crisis management frameworks, stakeholder communication, and post-crisis consumer trust restoration.</p>
             </div>
           </article>
+
           <article class="timeline-item reveal">
-            <div class="timeline-marker"><i class="fas fa-robot"></i></div>
+            <div class="timeline-marker" aria-hidden="true"><i class="fas fa-robot"></i></div>
             <div class="timeline-card">
-              <span class="timeline-tag">AI Exploration</span>
-              <h3>AI &amp; LLM Exploration</h3>
-              <p>A beginner-level exploration of how AI tools and LLMs can be used in education, content creation, and business to enhance productivity and creative output.</p>
+              <span class="timeline-tag">AI Application</span>
+              <h3>AI &amp; LLM Exploration in Academic &amp; Business Workflows</h3>
+              <p>Practical exploration of generative AI utilities and Large Language Models applied to higher education, study synthesis, financial data interpretation, and creative digital workflows.</p>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ===== CERTIFICATIONS ===== -->
+    <!-- ===== CERTIFICATIONS SECTION ===== -->
     <section id="certifications" class="section" aria-labelledby="certs-heading">
       <div class="container">
-        <div class="section-label">05</div>
+        <div class="section-label" aria-hidden="true">05</div>
         <h2 id="certs-heading" class="section-title center">Certifications &amp; Achievements</h2>
+        <p class="section-intro">Continuous professional credentialing and collegiate leadership milestones.</p>
+
         <div class="certs-grid">
-          <div class="cert-card reveal">
-            <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+          <article class="cert-card reveal">
+            <div class="cert-icon" aria-hidden="true"><i class="fas fa-certificate"></i></div>
             <span class="cert-status ongoing">Ongoing</span>
-            <h3>AI Learning Certification</h3>
-            <p class="cert-sub">Focus Areas</p>
-            <ul class="cert-tags">
-              <li><i class="fas fa-microchip"></i> Artificial Intelligence</li>
-              <li><i class="fas fa-language"></i> Large Language Models</li>
-              <li><i class="fas fa-satellite-dish"></i> Emerging Technologies</li>
+            <h3>AI Learning &amp; Prompt Engineering Certification</h3>
+            <p class="cert-sub">Specialization Domains</p>
+            <ul class="cert-tags" aria-label="Certification topics">
+              <li><i class="fas fa-microchip" aria-hidden="true"></i> Artificial Intelligence</li>
+              <li><i class="fas fa-language" aria-hidden="true"></i> Large Language Models</li>
+              <li><i class="fas fa-satellite-dish" aria-hidden="true"></i> Emerging Tech Trends</li>
             </ul>
-          </div>
-          <div class="cert-card reveal">
-            <div class="cert-icon achievement"><i class="fas fa-trophy"></i></div>
-            <span class="cert-status achieved">Achieved</span>
+            <p class="cert-note">Acquiring foundational mastery over modern machine learning tools and LLM prompting paradigms.</p>
+          </article>
+
+          <article class="cert-card reveal">
+            <div class="cert-icon achievement" aria-hidden="true"><i class="fas fa-trophy"></i></div>
+            <span class="cert-status achieved">Awarded</span>
             <h3>Best Manager – PR Committee</h3>
-            <p class="cert-sub">Skills Demonstrated</p>
-            <ul class="cert-tags">
-              <li><i class="fas fa-star"></i> Leadership</li>
-              <li><i class="fas fa-users"></i> Team Management</li>
+            <p class="cert-sub">Leadership Recognition</p>
+            <ul class="cert-tags" aria-label="Demonstrated skills">
+              <li><i class="fas fa-star" aria-hidden="true"></i> Public Relations</li>
+              <li><i class="fas fa-users" aria-hidden="true"></i> Committee Leadership</li>
+              <li><i class="fas fa-bullhorn" aria-hidden="true"></i> Event Management</li>
             </ul>
-            <p class="cert-note">College Recognition Award</p>
+            <p class="cert-note">Awarded for outstanding contribution, organizational planning, and team management within the college PR committee.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="section section-alt" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section-label" aria-hidden="true">06</div>
+        <h2 id="contact-heading" class="section-title center">Connect &amp; Collaborate</h2>
+        <div class="contact-card reveal">
+          <p>Interested in collaborating on finance research, AI applications, or digital content projects? Feel free to connect!</p>
+          <div class="contact-links">
+            <a href="https://github.com/aashvijain2610-lang" target="_blank" rel="noopener noreferrer" class="contact-btn">
+              <i class="fab fa-github" aria-hidden="true"></i> GitHub Profile
+            </a>
+            <a href="https://github.com/aashvijain2610-lang/portfolio" target="_blank" rel="noopener noreferrer" class="contact-btn">
+              <i class="fas fa-code-branch" aria-hidden="true"></i> View Repository
+            </a>
+            <a href="#about" class="contact-btn">
+              <i class="fas fa-envelope" aria-hidden="true"></i> Get in Touch
+            </a>
           </div>
         </div>
       </div>
@@ -970,10 +1260,28 @@ strong { color: var(--ink); }
 
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
-    <div class="container footer-inner">
-      <p>&copy; 2025 Aashvi Jain &nbsp;|&nbsp; Finance Student &amp; AI Learner</p>
-      <div class="footer-links">
-        <a href="#home" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-logo">Aashvi Jain</div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#education">Education</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#certifications">Certifications</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Aashvi Deepak Jain &nbsp;|&nbsp; Finance Student &amp; AI Learner</p>
+        <p>
+          <a href="https://aashvijain2610-lang.github.io/portfolio/sitemap.xml">XML Sitemap</a> &nbsp;·&nbsp;
+          <a href="https://aashvijain2610-lang.github.io/portfolio/robots.txt">robots.txt</a> &nbsp;·&nbsp;
+          <a href="https://aashvijain2610-lang.github.io/portfolio/llms.txt">llms.txt</a> &nbsp;·&nbsp;
+          <a href="#home" aria-label="Back to top">Top <i class="fas fa-arrow-up" aria-hidden="true"></i></a>
+        </p>
       </div>
     </div>
   </footer>
@@ -983,15 +1291,14 @@ strong { color: var(--ink); }
    script.js — Aashvi Jain Portfolio
    Features:
      · Sticky navbar + active link highlighting
-     · Hamburger toggle
-     · Scroll-reveal for .reveal elements
-     · Staggered reveal for children
+     · Accessible hamburger toggle
+     · Scroll-reveal with staggered animation
+     · Native smooth scrolling
    ============================================================ */
 
 (function () {
   'use strict';
 
-  /* ---------- DOM references ---------- */
   const navbar    = document.getElementById('navbar');
   const navToggle = document.getElementById('navToggle');
   const navLinks  = document.getElementById('navLinks');
@@ -999,15 +1306,15 @@ strong { color: var(--ink); }
   const sections  = document.querySelectorAll('section[id]');
   const reveals   = document.querySelectorAll('.reveal');
 
-  /* ---------- 1. Sticky navbar on scroll ---------- */
+  /* 1. Sticky navbar on scroll & Active link highlight */
   function handleScroll () {
-    /* Add shadow/bg once user scrolls past 60px */
-    navbar.classList.toggle('scrolled', window.scrollY > 60);
+    if (navbar) {
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+    }
 
-    /* Active nav link — highlight the current section */
     let current = '';
     sections.forEach(section => {
-      const sectionTop = section.offsetTop - 120;
+      const sectionTop = section.offsetTop - 140;
       if (window.scrollY >= sectionTop) {
         current = section.getAttribute('id');
       }
@@ -1020,61 +1327,55 @@ strong { color: var(--ink); }
       }
     });
 
-    /* Scroll-reveal */
     revealElements();
   }
 
-  /* ---------- 2. Hamburger toggle ---------- */
-  navToggle.addEventListener('click', () => {
-    const isOpen = navLinks.classList.toggle('open');
-    navToggle.setAttribute('aria-expanded', isOpen);
-    navToggle.innerHTML = isOpen
-      ? '<i class="fas fa-times"></i>'
-      : '<i class="fas fa-bars"></i>';
-  });
-
-  /* Close menu when a link is clicked */
-  allLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      navLinks.classList.remove('open');
-      navToggle.setAttribute('aria-expanded', false);
-      navToggle.innerHTML = '<i class="fas fa-bars"></i>';
+  /* 2. Hamburger toggle */
+  if (navToggle && navLinks) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', isOpen);
+      navToggle.innerHTML = isOpen
+        ? '<i class="fas fa-times" aria-hidden="true"></i>'
+        : '<i class="fas fa-bars" aria-hidden="true"></i>';
     });
-  });
 
-  /* ---------- 3. Scroll-reveal ---------- */
+    allLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.innerHTML = '<i class="fas fa-bars" aria-hidden="true"></i>';
+      });
+    });
+  }
+
+  /* 3. Scroll-reveal animation */
   function revealElements () {
     const windowH = window.innerHeight;
-
-    reveals.forEach((el, index) => {
+    reveals.forEach(el => {
       const rect = el.getBoundingClientRect();
-      /* Trigger when 80% of the way into viewport */
-      if (rect.top < windowH * 0.88) {
-        /* Stagger siblings by their index inside the same parent */
-        const siblings = Array.from(el.parentElement.querySelectorAll('.reveal'));
-        const delay    = siblings.indexOf(el) * 80; // ms
-        setTimeout(() => el.classList.add('visible'), delay);
+      if (rect.top < windowH * 0.9) {
+        el.classList.add('visible');
       }
     });
   }
 
-  /* ---------- 4. Smooth scroll for older browsers ---------- */
+  /* 4. Smooth scroll */
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', e => {
-      const target = document.querySelector(anchor.getAttribute('href'));
-      if (!target) return;
-      e.preventDefault();
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      const targetId = anchor.getAttribute('href');
+      if (targetId === '#') return;
+      const target = document.querySelector(targetId);
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
     });
   });
 
-  /* ---------- Init ---------- */
   window.addEventListener('scroll', handleScroll, { passive: true });
   window.addEventListener('resize', revealElements, { passive: true });
-
-  /* Run once on load */
   handleScroll();
-
 })();
   </script>
 </body>

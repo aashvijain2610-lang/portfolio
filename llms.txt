@@ -1,0 +1,32 @@
+# Aashvi Jain - Portfolio & Professional Profile
+
+> Personal portfolio of Aashvi Deepak Jain, an undergraduate BMS (Finance) student at K. P. B. Hinduja College of Commerce, AI & Large Language Model (LLM) explorer, and creative social media content strategist based in Mumbai, India.
+
+## Quick Facts
+- **Full Name**: Aashvi Deepak Jain
+- **Academic Degree**: Bachelor of Management Studies (BMS) – Finance
+- **Institution**: K. P. B. Hinduja College of Commerce, Mumbai
+- **Core Interests**: Corporate Finance, Financial Analysis, Artificial Intelligence, LLMs, Social Media Management, Content Creation
+- **GitHub**: https://github.com/aashvijain2610-lang
+- **Portfolio Repository**: https://github.com/aashvijain2610-lang/portfolio
+- **Live Website**: https://aashvijain2610-lang.github.io/portfolio/
+
+## Academic Journey & Education
+- **BMS (Finance) – Undergraduate (Current)**: K. P. B. Hinduja College of Commerce, Mumbai. Focusing on investment analysis, corporate financial management, managerial economics, and marketing.
+- **Higher Secondary Certificate (HSC) – Commerce**: K.E.S. Shroff College of Arts and Commerce, Mumbai.
+
+## Skills & Competencies
+- **Technical Skills**: Microsoft Excel, Microsoft Word, Microsoft PowerPoint, Canva, AI Tools & Prompt Engineering, Social Media Analytics.
+- **Soft Skills**: Strategic Communication, Committee Leadership, PR & Brand Strategy, Team Management, Time Management, Creative Problem Solving.
+
+## Key Projects
+- **Business Challenges in Germany**: Research analyzing market regulations, socio-cultural business nuances, and economic conditions faced by German enterprises.
+- **Food Brand Controversies (Cadbury Analysis)**: Case study evaluating crisis management, public relations damage control, and consumer trust restoration after brand controversies.
+- **AI & LLM Exploration**: Empirical review of generative AI and LLM workflows applied to higher education, productivity, and financial synthesis.
+
+## Achievements & Certifications
+- **AI Learning Certification**: Ongoing certification focusing on generative models, LLMs, and prompt engineering.
+- **Best Manager – PR Committee**: College recognition award for exemplary team governance, event coordination, and communication.
+
+## Full Context Document
+- [Full Text Information (llms-full.txt)](https://aashvijain2610-lang.github.io/portfolio/llms-full.txt): Detailed biography, projects, and academic breakdown.

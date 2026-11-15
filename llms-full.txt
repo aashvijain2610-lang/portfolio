@@ -1,0 +1,104 @@
+# Aashvi Deepak Jain — Comprehensive Professional Profile & Portfolio
+
+URL: https://aashvijain2610-lang.github.io/portfolio/
+Canonical Repository: https://github.com/aashvijain2610-lang/portfolio
+Primary Contact / Identity: Aashvi Deepak Jain
+Location: Mumbai, Maharashtra, India
+
+================================================================================
+1. BIOGRAPHICAL SUMMARY & PROFESSIONAL INTENT
+================================================================================
+Aashvi Deepak Jain is an ambitious undergraduate student currently pursuing a Bachelor of Management Studies (BMS) with a specialization in Finance at the prestigious K. P. B. Hinduja College of Commerce in Mumbai. 
+
+She operates at the convergence of financial markets, technological innovation (particularly generative AI and Large Language Models), and modern digital communication. Her academic and professional ethos is centered on continuous learning, data-driven analytical reasoning, leadership, and adapting modern software solutions to solve real-world business challenges.
+
+She is dedicated to understanding how AI tools can enhance productivity, automate repetitive analytical tasks in finance, and elevate creative output in marketing and social media strategy.
+
+================================================================================
+2. ACADEMIC QUALIFICATIONS
+================================================================================
+- Degree: Bachelor of Management Studies (BMS) – Specialization in Finance
+  Status: Undergraduate (Currently Enrolled)
+  Institution: K. P. B. Hinduja College of Commerce, Mumbai, India
+  Key Areas of Study:
+    * Corporate Finance & Financial Management
+    * Managerial Economics & Quantitative Methods
+    * Direct & Indirect Taxation
+    * Strategic Management & Business Ethics
+    * Marketing & Consumer Behavior
+
+- Higher Secondary Certificate (HSC) – Commerce Stream
+  Status: Completed
+  Institution: K.E.S. Shroff College of Arts and Commerce, Mumbai, India
+  Focus Areas:
+    * Book-keeping & Accountancy
+    * Economics & Commerce Organization
+    * Mathematics & Statistics
+    * English & Business Communication
+
+================================================================================
+3. CORE SKILLS & CAPABILITIES
+================================================================================
+A. Technical & Software Capabilities:
+- Financial & Data Tools:
+  * Microsoft Excel: Financial modeling basics, formulas, pivot tables, data visualization.
+  * Microsoft PowerPoint & Word: Professional executive presentations, project documentation, research briefs.
+- Artificial Intelligence & Modern Tools:
+  * Prompt engineering and utilization of modern Large Language Models (LLMs).
+  * AI-assisted research, automated text summarization, data extraction, and synthesis.
+- Creative & Digital Media:
+  * Canva: Visual asset creation, social media branding, infographics.
+  * Social Media Management: Content planning, engagement tracking, audience growth.
+  * Digital Copywriting: Crafting engaging narratives for campaigns and professional communication.
+
+B. Soft Skills & Leadership:
+- Strategic Communication: High clarity in written and verbal presentations.
+- Committee Governance & Management: Proven ability to organize teams and lead initiatives under strict deadlines.
+- Crisis Communication & Public Relations: Evaluated in case competitions and collegiate committee roles.
+- Time Management & Multitasking: Successfully balancing rigorous undergraduate academics with extracurricular projects and self-paced certifications.
+
+================================================================================
+4. RESEARCH PROJECTS & CASE STUDIES
+================================================================================
+Project 1: Business Challenges in Germany
+- Nature: International Business & Economic Research Study
+- Summary:
+  Conducted an analytical inquiry into the multifaceted operational hurdles faced by corporations operating in the German economy. The investigation reviewed Germany's strict regulatory environment, adherence to GDPR and data protection laws, cross-cultural managerial practices, rigid labor union negotiations (Mitbestimmung), energy transition costs (Energiewende), and demographic shifts affecting skilled labor availability.
+- Core Takeaway:
+  Identified strategies for multinational enterprises to balance strict compliance and high operational standards with agile innovation.
+
+Project 2: Controversies in Food Brands — Cadbury Case Study
+- Nature: Corporate Governance, Marketing & PR Case Study
+- Summary:
+  Researched the public perception crises experienced by confectionery major Cadbury (notably the 2003 infestation controversy in India and subsequent advertising campaigns). Explored how Cadbury mobilized crisis management protocols, partnered with prominent brand ambassadors, revamped its supply chain packaging ("Project Vishwas"), and effectively restored customer goodwill.
+- Core Takeaway:
+  Transparent PR communication paired with tangible operational product overhauls is mandatory to reconstruct consumer trust post-crisis.
+
+Project 3: AI & LLM Exploration in Academic & Business Workflows
+- Nature: Technological & Practical Application Exploration
+- Summary:
+  A project reviewing the integration of state-of-the-art LLMs in student workflows, project structuring, and financial literacy. Evaluated optimal prompting methodologies to extract structured summaries from complex financial disclosures and improve learning outcomes.
+- Core Takeaway:
+  AI serves as an intellectual multiplier when combined with foundational domain knowledge and rigorous human verification.
+
+================================================================================
+5. CERTIFICATIONS, HONORS & AWARDS
+================================================================================
+1. Certification in AI Learning & Emerging Technologies
+   - Status: Ongoing
+   - Focus: Deep dive into Artificial Intelligence foundations, neural architectures overview, prompt engineering, and LLM application paradigms.
+
+2. Best Manager Award – Public Relations (PR) Committee
+   - Status: Awarded / Achieved
+   - Issuer: College Collegiate Management Committee
+   - Recognition: Bestowed in recognition of exceptional organizational leadership, high-stakes communication handling, stakeholder relations, and flawless committee management.
+
+================================================================================
+6. ONLINE PROFILES & REPOSITORIES
+================================================================================
+- Website / Portfolio: https://aashvijain2610-lang.github.io/portfolio/
+- GitHub Profile: https://github.com/aashvijain2610-lang
+- Repository: https://github.com/aashvijain2610-lang/portfolio
+- XML Sitemap: https://aashvijain2610-lang.github.io/portfolio/sitemap.xml
+- Robots Configuration: https://aashvijain2610-lang.github.io/portfolio/robots.txt
+- Machine-Readable Summary: https://aashvijain2610-lang.github.io/portfolio/llms.txt
