@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aashvi Jain – Finance Student, AI Learner, and Social Media Enthusiast. Personal portfolio showcasing education, skills, projects, and certifications." />
+  <meta name="keywords" content="Aashvi Jain, Finance Student, BMS, AI Learner, Social Media, Portfolio" />
+  <title>Aashvi Jain | Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+/* ============================================================
+   style.css — Aashvi Jain Portfolio
+   Design: cream/parchment paper texture, editorial type pairing,
+   warm terracotta accents, refined timeline & cards.
+   ============================================================ */
+
+/* ---------- CSS Custom Properties ---------- */
+:root {
+  /* Palette */
+  --cream:       #F8F4EE;
+  --cream-mid:   #EFE8DC;
+  --cream-deep:  #E4D9C8;
+  --ink:         #2B2318;
+  --ink-light:   #5C4F3D;
+  --accent:      #B5682A;       /* warm terracotta */
+  --accent-soft: #D4956B;
+  --accent-pale: #F3E4D4;
+  --gold:        #C9A84C;
+  --white:       #FFFFFF;
+
+  /* Typography */
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body:    'Poppins', system-ui, sans-serif;
+
+  /* Spacing */
+  --section-py:   6rem;
+  --container-w:  1100px;
+
+  /* Misc */
+  --radius:       1.25rem;
+  --shadow-sm:    0 2px 12px rgba(43,35,24,0.07);
+  --shadow-md:    0 6px 28px rgba(43,35,24,0.11);
+  --shadow-lg:    0 14px 48px rgba(43,35,24,0.14);
+  --transition:   0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ---------- Reset & Base ---------- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--cream);
+  color: var(--ink);
+  line-height: 1.7;
+  /* Subtle paper grain via SVG data URI */
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+}
+
+img { max-width: 100%; display: block; }
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+
+/* ---------- Typography ---------- */
+h1, h2, h3 { font-family: var(--font-display); line-height: 1.2; }
+h1 { font-size: clamp(2.4rem, 6vw, 4.4rem); }
+h2 { font-size: clamp(1.8rem, 4vw, 2.8rem); }
+h3 { font-size: 1.15rem; font-weight: 600; }
+p  { font-size: 0.95rem; color: var(--ink-light); }
+strong { color: var(--ink); }
+
+/* ---------- Container ---------- */
+.container {
+  max-width: var(--container-w);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ---------- Section base ---------- */
+.section {
+  padding: var(--section-py) 0;
+  position: relative;
+}
+.section-alt { background-color: var(--cream-mid); }
+
+.section-label {
+  font-family: var(--font-display);
+  font-size: 5rem;
+  font-weight: 700;
+  color: var(--cream-deep);
+  position: absolute;
+  top: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  user-select: none;
+  pointer-events: none;
+  letter-spacing: -0.04em;
+}
+
+.section-title {
+  font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+  color: var(--ink);
+  margin-bottom: 3rem;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+.section-title::after {
+  content: '';
+  display: block;
+  width: 3rem;
+  height: 3px;
+  background: var(--accent);
+  border-radius: 2px;
+  margin-top: 0.5rem;
+}
+.section-title.center { text-align: center; }
+.section-title.center::after { margin: 0.5rem auto 0; }
+
+/* ============================================================
+   NAVBAR
+   ============================================================ */
+.navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  padding: 1rem 0;
+  transition: background var(--transition), box-shadow var(--transition);
+}
+.navbar.scrolled {
+  background: rgba(248, 244, 238, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: var(--shadow-sm);
+}
+
+.nav-container {
+  max-width: var(--container-w);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.05em;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.nav-link {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--ink-light);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  position: relative;
+  transition: color var(--transition);
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -3px; left: 0;
+  width: 0; height: 2px;
+  background: var(--accent);
+  border-radius: 1px;
+  transition: width var(--transition);
+}
+.nav-link:hover, .nav-link.active { color: var(--accent); }
+.nav-link:hover::after, .nav-link.active::after { width: 100%; }
+
+/* Hamburger */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  color: var(--ink);
+  cursor: pointer;
+  padding: 0.25rem;
+}
+
+/* ============================================================
+   HERO SECTION
+   ============================================================ */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 6rem 1.5rem 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Decorative circles */
+.hero::before, .hero::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+.hero::before {
+  width: 480px; height: 480px;
+  background: radial-gradient(circle, var(--accent-pale) 0%, transparent 70%);
+  top: -100px; right: -120px;
+  opacity: 0.6;
+}
+.hero::after {
+  width: 320px; height: 320px;
+  background: radial-gradient(circle, var(--cream-deep) 0%, transparent 70%);
+  bottom: -60px; left: -80px;
+}
+
+.hero-content { position: relative; z-index: 1; }
+
+.hero-greeting {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.hero-title { color: var(--ink); margin-bottom: 0.5rem; }
+.hero-name {
+  color: var(--accent);
+  font-style: italic;
+  display: block;
+}
+
+.hero-subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--ink-light);
+  margin: 1.25rem 0 2.5rem;
+  letter-spacing: 0.03em;
+}
+
+.hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--accent);
+  color: var(--white);
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  padding: 0.85rem 2rem;
+  border-radius: 100px;
+  transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
+  box-shadow: 0 4px 18px rgba(181,104,42,0.3);
+}
+.hero-cta:hover {
+  background: var(--ink);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(43,35,24,0.18);
+}
+
+/* Scroll line hint */
+.hero-scroll-hint {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.hero-scroll-hint span {
+  display: block;
+  width: 2px;
+  height: 48px;
+  background: linear-gradient(to bottom, var(--accent), transparent);
+  margin: 0 auto;
+  animation: scrollHint 1.8s ease-in-out infinite;
+}
+@keyframes scrollHint {
+  0%   { transform: scaleY(0); transform-origin: top; }
+  50%  { transform: scaleY(1); transform-origin: top; }
+  51%  { transform: scaleY(1); transform-origin: bottom; }
+  100% { transform: scaleY(0); transform-origin: bottom; }
+}
+
+/* Fade-in animation */
+.fade-in { animation: fadeIn 1s ease both; }
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ============================================================
+   ABOUT SECTION
+   ============================================================ */
+.about-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 3rem 3.5rem;
+  box-shadow: var(--shadow-md);
+  position: relative;
+  overflow: hidden;
+}
+.about-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 6px; height: 100%;
+  background: linear-gradient(to bottom, var(--accent), var(--gold));
+  border-radius: var(--radius) 0 0 var(--radius);
+}
+
+.about-body {
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
+  margin-top: 0.5rem;
+}
+
+.about-avatar {
+  flex-shrink: 0;
+  width: 88px; height: 88px;
+  border-radius: 50%;
+  background: var(--accent-pale);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  color: var(--accent);
+  border: 3px solid var(--cream-deep);
+}
+
+.about-text p { margin-bottom: 1rem; }
+
+.about-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1.5rem;
+}
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--accent-pale);
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.35rem 0.85rem;
+  border-radius: 100px;
+  letter-spacing: 0.04em;
+}
+
+/* ============================================================
+   EDUCATION SECTION
+   ============================================================ */
+.education-grid {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.education-icon {
+  text-align: center;
+  color: var(--accent);
+}
+.education-icon .fa-graduation-cap {
+  font-size: 5rem;
+  display: block;
+  margin-bottom: 0.75rem;
+  filter: drop-shadow(0 4px 12px rgba(181,104,42,0.25));
+}
+.edu-icon-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-light);
+}
+
+.education-entries {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+  padding-left: 1.5rem;
+  border-left: 2px dashed var(--cream-deep);
+}
+
+.edu-entry {
+  position: relative;
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+.edu-dot {
+  position: absolute;
+  left: -1.95rem;
+  top: 0.35rem;
+  width: 16px; height: 16px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 3px solid var(--cream-mid);
+  flex-shrink: 0;
+}
+
+.edu-content {
+  background: var(--white);
+  border-radius: calc(var(--radius) * 0.75);
+  padding: 1.25rem 1.5rem;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition), box-shadow var(--transition);
+  width: 100%;
+}
+.edu-content:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.edu-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: var(--accent-pale);
+  color: var(--accent);
+  padding: 0.2rem 0.7rem;
+  border-radius: 100px;
+  margin-bottom: 0.6rem;
+}
+.edu-content h3 { font-size: 1rem; margin-bottom: 0.4rem; }
+.edu-institution {
+  font-size: 0.85rem;
+  color: var(--ink-light);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.edu-note { font-size: 0.8rem; color: var(--accent-soft); margin-top: 0.3rem; }
+
+/* ============================================================
+   SKILLS SECTION
+   ============================================================ */
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.skill-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 2rem 2.25rem;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.skill-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+.skill-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--cream-deep);
+}
+.skill-icon {
+  font-size: 1.5rem;
+  color: var(--accent);
+  width: 44px; height: 44px;
+  background: var(--accent-pale);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.skill-card-header h3 { font-size: 1.05rem; }
+
+.skill-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-size: 0.88rem;
+  color: var(--ink-light);
+  padding: 0.55rem 0;
+  border-bottom: 1px solid var(--cream);
+  transition: color var(--transition);
+}
+.skill-list li:last-child { border-bottom: none; }
+.skill-list li:hover { color: var(--ink); }
+.skill-list li i {
+  width: 22px;
+  color: var(--accent);
+  font-size: 0.8rem;
+}
+
+.skills-separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: var(--gold);
+  padding-top: 1.5rem;
+  filter: drop-shadow(0 3px 8px rgba(201,168,76,0.3));
+  animation: glowPulse 2.5s ease-in-out infinite;
+}
+@keyframes glowPulse {
+  0%, 100% { filter: drop-shadow(0 3px 8px rgba(201,168,76,0.3)); }
+  50%       { filter: drop-shadow(0 6px 18px rgba(201,168,76,0.55)); }
+}
+
+/* ============================================================
+   PROJECTS / TIMELINE
+   ============================================================ */
+.timeline {
+  position: relative;
+  padding-left: 2.5rem;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 1.25rem;
+  top: 0; bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--accent), var(--gold), transparent);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+.timeline-item:last-child { margin-bottom: 0; }
+
+.timeline-marker {
+  position: absolute;
+  left: -2.5rem;
+  top: 1rem;
+  width: 46px; height: 46px;
+  border-radius: 50%;
+  background: var(--white);
+  border: 3px solid var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  font-size: 1rem;
+  box-shadow: var(--shadow-sm);
+  transition: background var(--transition), color var(--transition);
+  z-index: 1;
+}
+.timeline-item:hover .timeline-marker {
+  background: var(--accent);
+  color: var(--white);
+}
+
+.timeline-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 1.75rem 2rem;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.timeline-item:hover .timeline-card {
+  transform: translateX(6px);
+  box-shadow: var(--shadow-md);
+}
+
+.timeline-tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: var(--accent-pale);
+  color: var(--accent);
+  padding: 0.2rem 0.75rem;
+  border-radius: 100px;
+  margin-bottom: 0.6rem;
+}
+.timeline-card h3 { margin-bottom: 0.5rem; }
+.timeline-card p  { font-size: 0.88rem; }
+
+/* ============================================================
+   CERTIFICATIONS
+   ============================================================ */
+.certs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.cert-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 2.25rem 2rem;
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  overflow: hidden;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.cert-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0; right: 0;
+  width: 90px; height: 90px;
+  border-radius: 50%;
+  background: var(--accent-pale);
+  transform: translate(35px, 35px);
+}
+.cert-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+.cert-icon {
+  width: 52px; height: 52px;
+  border-radius: 14px;
+  background: var(--accent-pale);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+.cert-icon.achievement { background: #FFF8E7; color: var(--gold); }
+
+.cert-status {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.7rem;
+  border-radius: 100px;
+  margin-bottom: 0.75rem;
+}
+.cert-status.ongoing  { background: #E8F5E9; color: #2E7D32; }
+.cert-status.achieved { background: #FFF8E7; color: #B8860B; }
+
+.cert-card h3 { font-size: 1.05rem; margin-bottom: 0.75rem; }
+.cert-sub {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.cert-tags li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--ink-light);
+  padding: 0.35rem 0;
+}
+.cert-tags li i { color: var(--accent); font-size: 0.75rem; }
+.cert-note {
+  margin-top: 1rem;
+  font-size: 0.78rem;
+  color: var(--gold);
+  font-style: italic;
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.footer {
+  background: var(--ink);
+  color: rgba(248,244,238,0.6);
+  padding: 2rem 0;
+  font-size: 0.82rem;
+}
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-links a {
+  color: var(--accent-soft);
+  font-size: 1rem;
+  transition: color var(--transition);
+}
+.footer-links a:hover { color: var(--accent); }
+
+/* ============================================================
+   REVEAL ANIMATION (scroll-triggered)
+   ============================================================ */
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 900px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .skills-separator {
+    padding-top: 0;
+    font-size: 2rem;
+  }
+
+  .education-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .education-icon { display: none; }
+
+  .certs-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 680px) {
+  :root { --section-py: 4rem; }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%; left: 0; right: 0;
+    flex-direction: column;
+    gap: 0;
+    background: rgba(248, 244, 238, 0.97);
+    backdrop-filter: blur(12px);
+    padding: 1rem 0 1.5rem;
+    box-shadow: var(--shadow-md);
+  }
+  .nav-links.open { display: flex; }
+  .nav-link { padding: 0.75rem 1.5rem; letter-spacing: 0.04em; width: 100%; }
+  .nav-toggle { display: block; }
+
+  .about-card { padding: 2rem 1.5rem; }
+  .about-body { flex-direction: column; gap: 1.5rem; }
+
+  .section-label { font-size: 3.5rem; }
+
+  .footer-inner { flex-direction: column; gap: 0.75rem; text-align: center; }
+}
+
+/* ============================================================
+   PRINT / REDUCED MOTION
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">AJ</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section id="home" class="hero" aria-label="Hero introduction">
+      <div class="hero-content fade-in">
+        <p class="hero-greeting">Welcome to my portfolio</p>
+        <h1 class="hero-title">Hello, I am<br /><span class="hero-name">Aashvi Jain</span></h1>
+        <p class="hero-subtitle">Finance Student &nbsp;·&nbsp; AI Learner &nbsp;·&nbsp; Social Media Enthusiast</p>
+        <a href="#about" class="hero-cta">Discover More <i class="fas fa-arrow-down"></i></a>
+      </div>
+      <div class="hero-scroll-hint" aria-hidden="true"><span></span></div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about-card">
+          <div class="section-label">01</div>
+          <h2 id="about-heading" class="section-title">About Me</h2>
+          <div class="about-body">
+            <div class="about-avatar" aria-hidden="true"><i class="fas fa-user"></i></div>
+            <div class="about-text">
+              <p>Hi, I'm <strong>Aashvi Deepak Jain</strong>, a BMS (Finance) student passionate about finance, AI, and social media. I enjoy exploring AI tools, LLMs, and digital content creation to improve productivity and creativity.</p>
+              <p>I believe in continuous learning, leadership, and using technology to solve real-world problems.</p>
+              <div class="about-tags">
+                <span class="tag"><i class="fas fa-chart-line"></i> Finance</span>
+                <span class="tag"><i class="fas fa-robot"></i> AI &amp; LLMs</span>
+                <span class="tag"><i class="fas fa-hashtag"></i> Social Media</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EDUCATION ===== -->
+    <section id="education" class="section section-alt" aria-labelledby="education-heading">
+      <div class="container">
+        <div class="section-label">02</div>
+        <h2 id="education-heading" class="section-title">Education</h2>
+        <div class="education-grid">
+          <div class="education-icon" aria-hidden="true">
+            <i class="fas fa-graduation-cap"></i>
+            <p class="edu-icon-label">Academic Journey</p>
+          </div>
+          <div class="education-entries">
+            <div class="edu-entry reveal">
+              <div class="edu-dot"></div>
+              <div class="edu-content">
+                <span class="edu-badge">Undergraduate · Current</span>
+                <h3>Bachelor of Management Studies (BMS) – Finance</h3>
+                <p class="edu-institution"><i class="fas fa-building-columns"></i> K. P. B. Hinduja College of Commerce</p>
+              </div>
+            </div>
+            <div class="edu-entry reveal">
+              <div class="edu-dot"></div>
+              <div class="edu-content">
+                <span class="edu-badge">Higher Secondary</span>
+                <h3>Junior College (HSC)</h3>
+                <p class="edu-institution"><i class="fas fa-building-columns"></i> K.E.S. Shroff College of Arts and Commerce</p>
+                <p class="edu-note">Completed Higher Secondary Education</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="section" aria-labelledby="skills-heading">
+      <div class="container">
+        <div class="section-label">03</div>
+        <h2 id="skills-heading" class="section-title center">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <div class="skill-card-header">
+              <i class="fas fa-laptop-code skill-icon"></i>
+              <h3>Technical Skills</h3>
+            </div>
+            <ul class="skill-list">
+              <li><i class="fas fa-file-excel"></i> Microsoft Office (Excel, Word, PowerPoint)</li>
+              <li><i class="fas fa-palette"></i> Canva</li>
+              <li><i class="fas fa-brain"></i> AI Tools &amp; LLMs</li>
+              <li><i class="fas fa-pen-nib"></i> Content Creation</li>
+              <li><i class="fas fa-share-nodes"></i> Social Media Management</li>
+            </ul>
+          </div>
+          <div class="skills-separator" aria-hidden="true"><i class="fas fa-lightbulb"></i></div>
+          <div class="skill-card reveal">
+            <div class="skill-card-header">
+              <i class="fas fa-people-group skill-icon"></i>
+              <h3>Soft Skills</h3>
+            </div>
+            <ul class="skill-list">
+              <li><i class="fas fa-comments"></i> Communication</li>
+              <li><i class="fas fa-star"></i> Leadership</li>
+              <li><i class="fas fa-users"></i> Team Management</li>
+              <li><i class="fas fa-wand-magic-sparkles"></i> Creativity</li>
+              <li><i class="fas fa-clock"></i> Time Management</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="section section-alt" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="section-label">04</div>
+        <h2 id="projects-heading" class="section-title">Projects</h2>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"><i class="fas fa-globe-europe"></i></div>
+            <div class="timeline-card">
+              <span class="timeline-tag">Research Study</span>
+              <h3>Business Challenges in Germany</h3>
+              <p>A research-based study analysing key challenges faced by businesses operating in Germany, covering regulatory, cultural, and economic dimensions.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"><i class="fas fa-cookie-bite"></i></div>
+            <div class="timeline-card">
+              <span class="timeline-tag">Case Study</span>
+              <h3>Controversies in Food Brands</h3>
+              <p>A case study on controversies faced by brands like Cadbury and their impact on brand trust and reputation — exploring crisis management and consumer perception.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"><i class="fas fa-robot"></i></div>
+            <div class="timeline-card">
+              <span class="timeline-tag">AI Exploration</span>
+              <h3>AI &amp; LLM Exploration</h3>
+              <p>A beginner-level exploration of how AI tools and LLMs can be used in education, content creation, and business to enhance productivity and creative output.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CERTIFICATIONS ===== -->
+    <section id="certifications" class="section" aria-labelledby="certs-heading">
+      <div class="container">
+        <div class="section-label">05</div>
+        <h2 id="certs-heading" class="section-title center">Certifications &amp; Achievements</h2>
+        <div class="certs-grid">
+          <div class="cert-card reveal">
+            <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+            <span class="cert-status ongoing">Ongoing</span>
+            <h3>AI Learning Certification</h3>
+            <p class="cert-sub">Focus Areas</p>
+            <ul class="cert-tags">
+              <li><i class="fas fa-microchip"></i> Artificial Intelligence</li>
+              <li><i class="fas fa-language"></i> Large Language Models</li>
+              <li><i class="fas fa-satellite-dish"></i> Emerging Technologies</li>
+            </ul>
+          </div>
+          <div class="cert-card reveal">
+            <div class="cert-icon achievement"><i class="fas fa-trophy"></i></div>
+            <span class="cert-status achieved">Achieved</span>
+            <h3>Best Manager – PR Committee</h3>
+            <p class="cert-sub">Skills Demonstrated</p>
+            <ul class="cert-tags">
+              <li><i class="fas fa-star"></i> Leadership</li>
+              <li><i class="fas fa-users"></i> Team Management</li>
+            </ul>
+            <p class="cert-note">College Recognition Award</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; 2025 Aashvi Jain &nbsp;|&nbsp; Finance Student &amp; AI Learner</p>
+      <div class="footer-links">
+        <a href="#home" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+/* ============================================================
+   script.js — Aashvi Jain Portfolio
+   Features:
+     · Sticky navbar + active link highlighting
+     · Hamburger toggle
+     · Scroll-reveal for .reveal elements
+     · Staggered reveal for children
+   ============================================================ */
+
+(function () {
+  'use strict';
+
+  /* ---------- DOM references ---------- */
+  const navbar    = document.getElementById('navbar');
+  const navToggle = document.getElementById('navToggle');
+  const navLinks  = document.getElementById('navLinks');
+  const allLinks  = document.querySelectorAll('.nav-link');
+  const sections  = document.querySelectorAll('section[id]');
+  const reveals   = document.querySelectorAll('.reveal');
+
+  /* ---------- 1. Sticky navbar on scroll ---------- */
+  function handleScroll () {
+    /* Add shadow/bg once user scrolls past 60px */
+    navbar.classList.toggle('scrolled', window.scrollY > 60);
+
+    /* Active nav link — highlight the current section */
+    let current = '';
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 120;
+      if (window.scrollY >= sectionTop) {
+        current = section.getAttribute('id');
+      }
+    });
+
+    allLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === `#${current}`) {
+        link.classList.add('active');
+      }
+    });
+
+    /* Scroll-reveal */
+    revealElements();
+  }
+
+  /* ---------- 2. Hamburger toggle ---------- */
+  navToggle.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', isOpen);
+    navToggle.innerHTML = isOpen
+      ? '<i class="fas fa-times"></i>'
+      : '<i class="fas fa-bars"></i>';
+  });
+
+  /* Close menu when a link is clicked */
+  allLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', false);
+      navToggle.innerHTML = '<i class="fas fa-bars"></i>';
+    });
+  });
+
+  /* ---------- 3. Scroll-reveal ---------- */
+  function revealElements () {
+    const windowH = window.innerHeight;
+
+    reveals.forEach((el, index) => {
+      const rect = el.getBoundingClientRect();
+      /* Trigger when 80% of the way into viewport */
+      if (rect.top < windowH * 0.88) {
+        /* Stagger siblings by their index inside the same parent */
+        const siblings = Array.from(el.parentElement.querySelectorAll('.reveal'));
+        const delay    = siblings.indexOf(el) * 80; // ms
+        setTimeout(() => el.classList.add('visible'), delay);
+      }
+    });
+  }
+
+  /* ---------- 4. Smooth scroll for older browsers ---------- */
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', e => {
+      const target = document.querySelector(anchor.getAttribute('href'));
+      if (!target) return;
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+
+  /* ---------- Init ---------- */
+  window.addEventListener('scroll', handleScroll, { passive: true });
+  window.addEventListener('resize', revealElements, { passive: true });
+
+  /* Run once on load */
+  handleScroll();
+
+})();
+  </script>
+</body>
+</html>
